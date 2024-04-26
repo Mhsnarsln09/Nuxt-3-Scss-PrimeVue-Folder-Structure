@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    height: 242px;
+    background-color: $mainColor;
+    color: $mainTextColor;
+
+    @include mobileView {
+        height: 320px;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        @extend %responsive-screen;
+        @include mobileView {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

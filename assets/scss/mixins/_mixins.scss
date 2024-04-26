@@ -1,0 +1,28 @@
+@mixin xsMobileView {
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+@mixin mobileView {
+  @media (min-width: $mobile) and (max-width: $desktop){
+    @content;
+  }
+}
+
+@mixin tabletView {
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktopView {
+  @media (min-width: $desktop) and (max-width: $large-desktop){
+    @content;
+  }
+}
+
+@mixin largeDesktopView {
+  @media (min-width: $large-desktop) {
+    @content;
+  }
+}
